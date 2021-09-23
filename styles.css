@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+/* all elements
+ * {
+    padding: 0; //p0 press tab
+    margin: 0;  //m0 press tab
+} */
+
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
+
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif; 
+        /*identical entries*/
+    font: normal 16px 'Roboto', sans-serif;
+
+    /*font-family: 'Courier New', Courier, monospace;*/
+}
+
+a {
+    color: #0f141e;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+/* a:visited {
+    color: lightgrey;
+} */
+
+.avatar {
+    width: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px #383838;
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+/*adaptive design*/
+@media (max-width: 700px){
+    .info {
+        display: block; /*при ширине экрана 700px менять отображение на блочное*/
+        text-align: center;
+    }
+}
+
+.info-text {
+    margin-left: 20px;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    /* letter-spacing: 15px; */
+    /* word-spacing: 40px */
+}
+
+/* box-model */
+/* .social{
+    background: rgba(255, 0, 0, 0.39); */
+    /* padding: 15px; */
+    /* padding: 15px 40px; */
+    /* padding: 15px 20px 40px 12px; */
+    /* border: 2px solid black;
+    border-bottom-style: dotted;
+    margin: 20px;
+} */
+
+.container {
+    width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+/* 
+.box-model > div {
+    float: left;
+    background: black;
+    border: 4px solid red;
+    height: 200px;
+    width: 25%;
+    box-sizing: border-box;  //box + border space value 
+} */
+
+.bg-yellow{
+    background: lightyellow;
+}
+
+.bg-green{
+    background: rgb(201, 238, 201);
+}
+
+.bg-red{
+    background: rgb(238, 199, 199);
+}
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li{
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+/*coloring separete child of table*/
+.table td:nth-child(1), 
+.table td:nth-child(3) {
+    color: gray;
+} 
+
+/*coloring even (четные) table row*/
+/*.table tr:nth-child(even){
+    background-color: #86898f;
+}*/
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block; /*each element on its own line*/
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #0f141e;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit; /*наследование шрифтов*/
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.row > .form-group {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.row > .form-group:first-child {
+    margin-right: 20px;
+}
+
+.btn {
+    color: white;
+    padding: 15px 20px;
+    background: #0f141e;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/*position*/
+/*
+.position {
+    position: relative;
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+}
+
+.box {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    /* top: 150px; */
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*background: coral;*/
+/*}*/
